@@ -1,68 +1,98 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Create React App eXtended v.1.0.0
 
-## Available Scripts
+> "react": "^16.9.0"
 
-In the project directory, you can run:
+### Content
 
-### `npm start`
+**[How to launch](#how-to-launch)**  
+**[What is this?](#what-is-this)**  
+**[Pre-commit](#pre-commit)**  
+**[Dependencies](#dependencies)**  
+**[License](#license)**
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## How to launch:
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+1. `git clone`
+2. `git remote set-url origin https://github.com/USERNAME/REPOSITORY.git` to update the origin remote with your own repository / `git remote rm origin` to remove the origin remote
+3. `yarn` / `npm i`
+4. `yarn start` / `npm start`
+5. Navigate to your localhost address
+   (default is http://localhost:3000/)
 
-### `npm test`
+For more info visit the [original CRA repository](https://github.com/facebook/create-react-app).
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+P.S. Don't forget to remove extra info like keywords, repository and etc. from `package.json`.
 
-### `npm run build`
+## What is this?
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+_Create React App eXtended_ is an opinionated (a bit) version of [Create React App](https://github.com/facebook/create-react-app).
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+It contains the whole [CRA](https://github.com/facebook/create-react-app) +
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [CSS Modules](https://github.com/css-modules/css-modules) implementation
+- Basic styles adjustment: `"normalize.css": "^8.0.1"` and `./src/styles/misc`
+- Set of SCSS/Sass mixins and variables (a bit) in `./src/styles/includes`
+- Pre-configured and customizable [Stylelint](https://stylelint.io/), [Prettier](https://prettier.io/) and [ESLint](https://eslint.org/)
+- Pre-commit with [Husky](https://github.com/typicode/husky) and [lint-staged](https://github.com/okonet/lint-staged)
+- [uniqid](https://github.com/adamhalasz/uniqid)
 
-### `npm run eject`
+## Pre-commit
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+_CRAX_ has a pre-commit script, based on [Husky](https://github.com/typicode/husky) and [lint-staged](https://github.com/okonet/lint-staged). It looks like this:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+"lint-staged": {
+    "src/**/*.{js,jsx}": [
+      "pretty-quick",
+      "eslint 'src/**/*.{js,jsx}' --fix"
+    ],
+    "src/**/*.{scss,sass,css}": [
+      "stylelint 'src/**/*.{scss,sass,css}' --fix"
+    ]
+},
+"husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && yarn build && git add ."
+    }
+}
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+And it can be configured in any preferrable way. Enjoy!
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Dependencies
 
-## Learn More
+You **should** `yarn upgrade --latest` / `npm update && npm audit fix -f` as _CRAX_ will always be ok working with the latest versions of the dependencies, so it is **strongly recommended**. If anything goes wrong, visit [original CRA repository](https://github.com/facebook/create-react-app) for explanations.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+"dependencies": {
+    "normalize.css": "^8.0.1",
+    "react": "^16.9.0",
+    "react-app-polyfill": "^1.0.2",
+    "react-dom": "^16.9.0",
+    "react-scripts": "3.1.1",
+    "uniqid": "^5.0.3"
+},
+"devDependencies": {
+    "css-loader": "^3.2.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.2",
+    "husky": "^3.0.0",
+    "lint-staged": "^9.2.0",
+    "node-sass": "^4.12.0",
+    "prettier": "^1.18.2",
+    "pretty-quick": "^1.11.1",
+    "stylelint": "^10.1.0",
+    "stylelint-config-standard": "^18.3.0",
+    "stylelint-order": "^3.0.1"
+}
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
 
-### Code Splitting
+Copyright © 2019, based on Create React App by Facebook, Inc.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Licensed under the MIT license.
