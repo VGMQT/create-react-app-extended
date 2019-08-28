@@ -1,0 +1,76 @@
+{
+  "name": "@vgmqt/create-react-app-extended",
+  "version": "0.1.0",
+  "description": "An extended version of Create React App with linters, styles adjustment, pre-commit and more",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VGMQT/create-react-app-extended.git"
+  },
+  "keywords": [
+    "create-react-app",
+    "cra",
+    "react",
+    "builder"
+  ],
+  "author": "Vlad Gerasimovich <vlad.gerasimovich.dev@gmail.com>",
+  "license": "MIT",
+  "bugs": "https://github.com/VGMQT/create-react-app-extended/issues",
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "react": "^16.9.0",
+    "react-app-polyfill": "^1.0.2",
+    "react-dom": "^16.9.0",
+    "react-scripts": "3.1.1",
+    "uniqid": "^5.0.3"
+  },
+  "devDependencies": {
+    "css-loader": "^3.2.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.2",
+    "husky": "^3.0.0",
+    "lint-staged": "^9.2.0",
+    "node-sass": "^4.12.0",
+    "prettier": "^1.18.2",
+    "pretty-quick": "^1.11.1",
+    "stylelint": "^10.1.0",
+    "stylelint-config-standard": "^18.3.0",
+    "stylelint-order": "^3.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all",
+      "ie >= 9"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx}": [
+      "pretty-quick",
+      "eslint 'src/**/*.{js,jsx}' --fix"
+    ],
+    "src/**/*.{scss,sass,css}": [
+      "stylelint 'src/**/*.{scss,sass,css}' --fix"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && yarn build && git add ."
+    }
+  }
+}
