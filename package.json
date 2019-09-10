@@ -1,6 +1,6 @@
 {
   "name": "@vgmqt/create-react-app-extended",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "An extended version of Create React App with linters, styles adjustment, pre-commit and more",
   "repository": {
     "type": "git",
@@ -20,6 +20,7 @@
     "react": "^16.9.0",
     "react-app-polyfill": "^1.0.2",
     "react-dom": "^16.9.0",
+    "react-router-dom": "^5.0.1",
     "react-scripts": "3.1.1",
     "uniqid": "^5.0.3"
   },

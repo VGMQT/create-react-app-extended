@@ -1,4 +1,4 @@
-# Create React App eXtended v.1.0.0
+# Create React App eXtended v.1.1.0
 
 > "react": "^16.9.0"
 
@@ -34,6 +34,7 @@ It contains the whole [CRA](https://github.com/facebook/create-react-app) +
 - Set of SCSS/Sass mixins and variables (a bit) in `./src/styles/includes`
 - Pre-configured and customizable [Stylelint](https://stylelint.io/), [Prettier](https://prettier.io/) and [ESLint](https://eslint.org/)
 - Pre-commit with [Husky](https://github.com/typicode/husky) and [lint-staged](https://github.com/okonet/lint-staged)
+- [ScrollToTop function](https://reacttraining.com/react-router/web/guides/scroll-restoration) that does not involve hash navigation (for that, try [React Router Hash Link](https://github.com/rafrex/react-router-hash-link))
 - [uniqid](https://github.com/adamhalasz/uniqid)
 
 ## Pre-commit
