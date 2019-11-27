@@ -3,7 +3,11 @@
   "plugins": ["prettier"],
   "rules": {
     "camelcase": 0,
+    "func-names": 0,
+    "no-plusplus": 0,
+    "no-undef": 0,
     "no-underscore-dangle": 0,
+    "no-unused-vars": 0,
     "import/imports-first": ["error", "absolute-first"],
     "import/newline-after-import": "error",
     "react/jsx-filename-extension": 0,
@@ -30,7 +34,7 @@
     // dangerouslySetInnerHTML is important for some projects
     "react/no-danger": 0,
 
-    // react-use-form-state {...label} doing fine
+    // react-use-form-state {...label} is doing fine
     "jsx-a11y/control-has-associated-label": 0,
     "jsx-a11y/label-has-associated-control": 0,
     "jsx-a11y/label-has-for": 0

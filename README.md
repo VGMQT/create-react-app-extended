@@ -1,6 +1,6 @@
-# Create React App eXtended v.1.1.0
+# Create React App eXtended v.1.1.1
 
-> "react": "^16.9.0"
+> "react": "^16.12.0"
 
 ### Content
 
@@ -21,20 +21,20 @@
 
 For more info visit the [original CRA repository](https://github.com/facebook/create-react-app).
 
-P.S. Don't forget to remove extra info like keywords, repository and etc. from `package.json`.
+P.S. Don't forget to remove extra info like keywords, repository, etc. from `package.json`.
 
 ## What is this?
 
-_Create React App eXtended_ is an opinionated (a bit) version of [Create React App](https://github.com/facebook/create-react-app).
+_Create React App eXtended_ or _CRAX_ is an opinionated version of [Create React App](https://github.com/facebook/create-react-app).
 
 It contains the whole [CRA](https://github.com/facebook/create-react-app) +
 
 - [CSS Modules](https://github.com/css-modules/css-modules) implementation
 - Basic styles adjustment: `"normalize.css": "^8.0.1"` and `./src/styles/misc`
-- Set of SCSS/Sass mixins and variables (a bit) in `./src/styles/includes`
+- Set of SCSS/Sass mixins and variables in `./src/styles/includes`
 - Pre-configured and customizable [Stylelint](https://stylelint.io/), [Prettier](https://prettier.io/) and [ESLint](https://eslint.org/)
-- Pre-commit with [Husky](https://github.com/typicode/husky) and [lint-staged](https://github.com/okonet/lint-staged)
-- [ScrollToTop function](https://reacttraining.com/react-router/web/guides/scroll-restoration) that does not involve hash navigation (for that, try [React Router Hash Link](https://github.com/rafrex/react-router-hash-link))
+- Pre-commit feature with [Husky](https://github.com/typicode/husky) and [lint-staged](https://github.com/okonet/lint-staged)
+- [ScrollToTop function](https://reacttraining.com/react-router/web/guides/scroll-restoration) that does not include hash navigation (for that, try [React Router Hash Link](https://github.com/rafrex/react-router-hash-link))
 - [uniqid](https://github.com/adamhalasz/uniqid)
 
 ## Pre-commit
@@ -43,18 +43,18 @@ _CRAX_ has a pre-commit script, based on [Husky](https://github.com/typicode/hus
 
 ```
 "lint-staged": {
-    "src/**/*.{js,jsx}": [
-      "pretty-quick",
-      "eslint 'src/**/*.{js,jsx}' --fix"
-    ],
-    "src/**/*.{scss,sass,css}": [
-      "stylelint 'src/**/*.{scss,sass,css}' --fix"
-    ]
+  "src/**/*.{js,jsx}": [
+    "pretty-quick --pattern './src/**/*.{js,jsx}'",
+    "eslint './src/**/*.{js,jsx}' --fix"
+  ],
+  "src/**/*.{scss,sass,css}": [
+    "stylelint './src/**/*.{scss,sass,css}' --fix"
+  ]
 },
 "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged && yarn build && git add ."
-    }
+  "hooks": {
+    "pre-commit": "lint-staged && yarn build && git add ."
+  }
 }
 ```
 
@@ -62,33 +62,34 @@ And it can be configured in any preferrable way. Enjoy!
 
 ## Dependencies
 
-You **should** `yarn upgrade --latest` / `npm update && npm audit fix -f` as _CRAX_ will always be ok working with the latest versions of the dependencies, so it is **strongly recommended**. If anything goes wrong, visit [original CRA repository](https://github.com/facebook/create-react-app) for explanations.
+You **should** `yarn upgrade --latest` / `npm update && npm audit fix -f` as _CRAX_ will always be ok working with the latest versions of the dependencies, so it is **strongly recommended**. If anything goes wrong, visit the [original CRA repository](https://github.com/facebook/create-react-app) for explanations.
 
 ```
 "dependencies": {
-    "normalize.css": "^8.0.1",
-    "react": "^16.9.0",
-    "react-app-polyfill": "^1.0.2",
-    "react-dom": "^16.9.0",
-    "react-scripts": "3.1.1",
-    "uniqid": "^5.0.3"
+  "normalize.css": "^8.0.1",
+  "react": "^16.12.0",
+  "react-app-polyfill": "^1.0.4",
+  "react-dom": "^16.12.0",
+  "react-router-dom": "^5.1.2",
+  "react-scripts": "3.2.0",
+  "uniqid": "^5.1.0"
 },
 "devDependencies": {
-    "css-loader": "^3.2.0",
-    "eslint-config-airbnb": "^18.0.1",
-    "eslint-config-prettier": "^6.0.0",
-    "eslint-plugin-import": "^2.18.0",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-prettier": "^3.1.0",
-    "eslint-plugin-react": "^7.14.2",
-    "husky": "^3.0.0",
-    "lint-staged": "^9.2.0",
-    "node-sass": "^4.12.0",
-    "prettier": "^1.18.2",
-    "pretty-quick": "^1.11.1",
-    "stylelint": "^10.1.0",
-    "stylelint-config-standard": "^18.3.0",
-    "stylelint-order": "^3.0.1"
+  "css-loader": "^3.2.0",
+  "eslint-config-airbnb": "^18.0.1",
+  "eslint-config-prettier": "^6.7.0",
+  "eslint-plugin-import": "^2.18.0",
+  "eslint-plugin-jsx-a11y": "^6.2.3",
+  "eslint-plugin-prettier": "^3.1.1",
+  "eslint-plugin-react": "^7.16.0",
+  "husky": "^3.1.0",
+  "lint-staged": "^9.5.0",
+  "node-sass": "^4.13.0",
+  "prettier": "^1.19.1",
+  "pretty-quick": "^2.0.1",
+  "stylelint": "^12.0.0",
+  "stylelint-config-standard": "^19.0.0",
+  "stylelint-order": "^3.1.1"
 }
 ```
 
