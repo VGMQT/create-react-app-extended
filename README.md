@@ -95,6 +95,6 @@ You **should** `yarn upgrade --latest` / `npm update && npm audit fix -f` as _CR
 
 ## License
 
-Copyright © 2019, based on Create React App by Facebook, Inc.
+Copyright © 2019 - 2020, based on Create React App by Facebook, Inc.
 
 Licensed under the MIT license.
