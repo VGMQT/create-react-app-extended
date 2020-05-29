@@ -1,7 +1,9 @@
 import React from 'react';
 import 'normalize.css/normalize.css';
-import './styles/global.scss';
-import styles from './App.module.scss';
+import 'styles/global.scss';
+import styles from 'App.module.scss';
+
+import ElementExample from 'templates/elements/ElementExample';
 
 const App = () => {
   return (
@@ -11,6 +13,7 @@ const App = () => {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <ElementExample />
         <a
           className={styles.link}
           href="https://reactjs.org"

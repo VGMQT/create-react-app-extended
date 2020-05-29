@@ -10,6 +10,9 @@
     "no-unused-vars": 0,
     "import/imports-first": ["error", "absolute-first"],
     "import/newline-after-import": "error",
+    // Gets in the way of the absolute imports
+    "import/no-unresolved": 0,
+    //--
     "react/jsx-filename-extension": 0,
     "react/jsx-props-no-spreading": 0,
     "react/jsx-tag-spacing": [
@@ -34,7 +37,7 @@
     // dangerouslySetInnerHTML is important for some projects
     "react/no-danger": 0,
 
-    // react-use-form-state {...label} is doing fine
+    // react-use-form-state {...label} takes care of this
     "jsx-a11y/control-has-associated-label": 0,
     "jsx-a11y/label-has-associated-control": 0,
     "jsx-a11y/label-has-for": 0

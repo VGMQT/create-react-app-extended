@@ -1,6 +1,6 @@
-# Create React App eXtended v.1.1.1
+# Create React App eXtended v.1.1.2
 
-> "react": "^16.12.0"
+> "react": "^16.13.1"
 
 ### Content
 
@@ -36,6 +36,7 @@ It contains the whole [CRA](https://github.com/facebook/create-react-app) +
 - Pre-commit feature with [Husky](https://github.com/typicode/husky) and [lint-staged](https://github.com/okonet/lint-staged)
 - [ScrollToTop function](https://reacttraining.com/react-router/web/guides/scroll-restoration) that does not include hash navigation (for that, try [React Router Hash Link](https://github.com/rafrex/react-router-hash-link))
 - [uniqid](https://github.com/adamhalasz/uniqid)
+- `jsconfig.json`, that includes [absolute imports](https://create-react-app.dev/docs/importing-a-component/#absolute-imports)
 
 ## Pre-commit
 
@@ -67,29 +68,29 @@ You **should** `yarn upgrade --latest` / `npm update && npm audit fix -f` as _CR
 ```
 "dependencies": {
   "normalize.css": "^8.0.1",
-  "react": "^16.12.0",
-  "react-app-polyfill": "^1.0.4",
-  "react-dom": "^16.12.0",
-  "react-router-dom": "^5.1.2",
-  "react-scripts": "3.2.0",
-  "uniqid": "^5.1.0"
+  "react": "^16.13.1",
+  "react-app-polyfill": "^1.0.6",
+  "react-dom": "^16.13.1",
+  "react-router-dom": "^5.2.0",
+  "react-scripts": "3.4.1",
+  "uniqid": "^5.2.0"
 },
 "devDependencies": {
-  "css-loader": "^3.2.0",
-  "eslint-config-airbnb": "^18.0.1",
-  "eslint-config-prettier": "^6.7.0",
-  "eslint-plugin-import": "^2.18.0",
+  "css-loader": "^3.5.3",
+  "eslint-config-airbnb": "^18.1.0",
+  "eslint-config-prettier": "^6.11.0",
+  "eslint-plugin-import": "^2.20.2",
   "eslint-plugin-jsx-a11y": "^6.2.3",
-  "eslint-plugin-prettier": "^3.1.1",
-  "eslint-plugin-react": "^7.16.0",
-  "husky": "^3.1.0",
-  "lint-staged": "^9.5.0",
-  "node-sass": "^4.13.0",
-  "prettier": "^1.19.1",
+  "eslint-plugin-prettier": "^3.1.3",
+  "eslint-plugin-react": "^7.20.0",
+  "husky": "^4.2.5",
+  "lint-staged": "^10.2.7",
+  "node-sass": "^4.14.1",
+  "prettier": "^2.0.5",
   "pretty-quick": "^2.0.1",
-  "stylelint": "^12.0.0",
-  "stylelint-config-standard": "^19.0.0",
-  "stylelint-order": "^3.1.1"
+  "stylelint": "^13.5.0",
+  "stylelint-config-standard": "^20.0.0",
+  "stylelint-order": "^4.0.0"
 }
 ```
 
