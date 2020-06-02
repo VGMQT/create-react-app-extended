@@ -1,13 +1,13 @@
-# Create React App eXtended v.1.1.2
+# Create React App eXtended v.1.1.3
 
 > "react": "^16.13.1"
 
 ### Content
 
-**[How to launch](#how-to-launch)**  
-**[What is this?](#what-is-this)**  
-**[Pre-commit](#pre-commit)**  
-**[Dependencies](#dependencies)**  
+**[How to launch](#how-to-launch)**
+**[What is this?](#what-is-this)**
+**[Pre-commit](#pre-commit)**
+**[Dependencies](#dependencies)**
 **[License](#license)**
 
 ## How to launch:

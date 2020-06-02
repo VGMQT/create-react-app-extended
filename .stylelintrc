@@ -157,11 +157,11 @@
       },
       {
         "type": "rule",
-        "selector": "&:focus"
+        "selector": "&:active"
       },
       {
         "type": "rule",
-        "selector": "&:active"
+        "selector": "&:focus"
       },
       {
         "type": "rule",
