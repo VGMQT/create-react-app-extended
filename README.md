@@ -1,4 +1,4 @@
-# Create React App eXtended v.1.1.3
+# Create React App eXtended v.1.2.0
 
 > "react": "^16.13.1"
 
@@ -76,22 +76,22 @@ You **should** `yarn upgrade --latest` / `npm update && npm audit fix -f` as _CR
   "uniqid": "^5.2.0"
 },
 "devDependencies": {
-  "css-loader": "^3.5.3",
-  "eslint-config-airbnb": "^18.1.0",
+  "css-loader": "^4.2.0",
+  "eslint-config-airbnb": "^18.2.0",
   "eslint-config-prettier": "^6.11.0",
-  "eslint-plugin-import": "^2.20.2",
-  "eslint-plugin-jsx-a11y": "^6.2.3",
-  "eslint-plugin-prettier": "^3.1.3",
-  "eslint-plugin-react": "^7.20.0",
+  "eslint-plugin-import": "^2.22.0",
+  "eslint-plugin-jsx-a11y": "^6.3.1",
+  "eslint-plugin-prettier": "^3.1.4",
+  "eslint-plugin-react": "^7.20.5",
   "husky": "^4.2.5",
-  "lint-staged": "^10.2.7",
+  "lint-staged": "^10.2.11",
   "node-sass": "^4.14.1",
   "prettier": "^2.0.5",
   "pretty-quick": "^2.0.1",
-  "stylelint": "^13.5.0",
+  "stylelint": "^13.6.1",
   "stylelint-config-standard": "^20.0.0",
-  "stylelint-order": "^4.0.0"
-}
+  "stylelint-order": "^4.1.0"
+},
 ```
 
 ## License
