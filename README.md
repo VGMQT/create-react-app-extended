@@ -84,9 +84,9 @@ You **should** `yarn upgrade --latest` / `npm update && npm audit fix -f` as _CR
   "eslint-plugin-react": "^7.21.5",
   "husky": "^4.3.0",
   "lint-staged": "^10.5.1",
-  "node-sass": "^5.0.0",
   "prettier": "^2.1.2",
   "pretty-quick": "^3.1.0",
+  "sass": "^1.28.0",
   "stylelint": "^13.7.2",
   "stylelint-config-standard": "^20.0.0",
   "stylelint-order": "^4.1.0"
