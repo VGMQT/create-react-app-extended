@@ -1,10 +1,10 @@
 {
-  "name": "@vgmqt/create-react-app-extended",
-  "version": "1.2.0",
+  "name": "@vgerasimovich/create-react-app-extended",
+  "version": "1.3.0",
   "description": "An extended version of Create React App with linters, styles adjustment, pre-commit and more",
   "repository": {
     "type": "git",
-    "url": "https://github.com/VGMQT/create-react-app-extended.git"
+    "url": "https://github.com/vgerasimovich/create-react-app-extended.git"
   },
   "keywords": [
     "create-react-app",
@@ -15,32 +15,31 @@
     "builder",
     "task runner"
   ],
-  "author": "Vlad Gerasimovich <vlad.gerasimovich.dev@gmail.com>",
+  "author": "Vlad Gerasimovich <vlad.gerasimovich.micro@outlook.com>",
   "license": "MIT",
-  "bugs": "https://github.com/VGMQT/create-react-app-extended/issues",
+  "bugs": "https://github.com/vgerasimovich/create-react-app-extended/issues",
   "dependencies": {
     "normalize.css": "^8.0.1",
-    "react": "^16.13.1",
-    "react-app-polyfill": "^1.0.6",
-    "react-dom": "^16.13.1",
+    "react": "^17.0.1",
+    "react-app-polyfill": "^2.0.0",
+    "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1",
-    "uniqid": "^5.2.0"
+    "react-scripts": "4.0.0"
   },
   "devDependencies": {
-    "css-loader": "^4.2.0",
+    "css-loader": "^5.0.0",
     "eslint-config-airbnb": "^18.2.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-react": "^7.20.5",
-    "husky": "^4.2.5",
-    "lint-staged": "^10.2.11",
-    "node-sass": "^4.14.1",
-    "prettier": "^2.0.5",
-    "pretty-quick": "^2.0.1",
-    "stylelint": "^13.6.1",
+    "eslint-plugin-react": "^7.21.5",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.5.1",
+    "prettier": "^2.1.2",
+    "pretty-quick": "^3.1.0",
+    "sass": "^1.28.0",
+    "stylelint": "^13.7.2",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-order": "^4.1.0"
   },
@@ -54,12 +53,12 @@
     "production": [
       "> 0.5%",
       "last 2 versions",
-      "IE 11"
+      "not dead"
     ],
     "development": [
       "> 0.5%",
       "last 2 versions",
-      "IE 11"
+      "not dead"
     ]
   },
   "lint-staged": {

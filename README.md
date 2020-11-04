@@ -1,6 +1,6 @@
-# Create React App eXtended v.1.2.0
+# Create React App eXtended v.1.3.0
 
-> "react": "^16.13.1"
+> "react": "^17.0.1"
 
 ### Content
 
@@ -68,27 +68,26 @@ You **should** `yarn upgrade --latest` / `npm update && npm audit fix -f` as _CR
 ```
 "dependencies": {
   "normalize.css": "^8.0.1",
-  "react": "^16.13.1",
-  "react-app-polyfill": "^1.0.6",
-  "react-dom": "^16.13.1",
+  "react": "^17.0.1",
+  "react-app-polyfill": "^2.0.0",
+  "react-dom": "^17.0.1",
   "react-router-dom": "^5.2.0",
-  "react-scripts": "3.4.1",
-  "uniqid": "^5.2.0"
+  "react-scripts": "4.0.0"
 },
 "devDependencies": {
-  "css-loader": "^4.2.0",
+  "css-loader": "^5.0.0",
   "eslint-config-airbnb": "^18.2.0",
-  "eslint-config-prettier": "^6.11.0",
-  "eslint-plugin-import": "^2.22.0",
-  "eslint-plugin-jsx-a11y": "^6.3.1",
+  "eslint-config-prettier": "^6.15.0",
+  "eslint-plugin-import": "^2.22.1",
+  "eslint-plugin-jsx-a11y": "^6.4.1",
   "eslint-plugin-prettier": "^3.1.4",
-  "eslint-plugin-react": "^7.20.5",
-  "husky": "^4.2.5",
-  "lint-staged": "^10.2.11",
-  "node-sass": "^4.14.1",
-  "prettier": "^2.0.5",
-  "pretty-quick": "^2.0.1",
-  "stylelint": "^13.6.1",
+  "eslint-plugin-react": "^7.21.5",
+  "husky": "^4.3.0",
+  "lint-staged": "^10.5.1",
+  "node-sass": "^5.0.0",
+  "prettier": "^2.1.2",
+  "pretty-quick": "^3.1.0",
+  "stylelint": "^13.7.2",
   "stylelint-config-standard": "^20.0.0",
   "stylelint-order": "^4.1.0"
 },

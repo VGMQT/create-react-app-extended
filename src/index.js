@@ -1,5 +1,7 @@
-import 'react-app-polyfill/ie9';
+// It will automatically use the browserslist you've defined to only include polyfills needed by your target browsers
 import 'react-app-polyfill/stable';
+//--
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
